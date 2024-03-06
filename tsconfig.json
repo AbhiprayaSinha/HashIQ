@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2019",
+    "allowJs": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    // "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    // "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": true,
+    // "noFallthroughCasesInSwitch": false
+    "paths": {
+      "@services/*": ["src/services/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@repositories/*": ["src/repositories/*"],
+      "@models/*": ["src/models/*"],
+      "@modules/*": ["src/modules/*"],
+      "@dto/*": ["src/dto/*"]
+    },
+  },
+  "exclude": ["node_modules", "dist"],
+}
